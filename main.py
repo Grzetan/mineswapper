@@ -1,8 +1,5 @@
 import pygame
 import numpy as np
-import sys
-
-sys.setrecursionlimit(2000)
 
 pygame.init()
 
