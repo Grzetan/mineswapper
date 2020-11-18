@@ -56,9 +56,8 @@ def game(board_size):
             if board[cell[0],cell[1],0] == 0 and board[cell[0],cell[1],1] == 0:
                 board[cell[0],cell[1],1] = 1
                 reveal_empty_cells(cell)
-                for cell2 in get_cells_around(cell):
-                    board[cell2[0],cell2[1],1] = 1
-        
+            board[cell[0],cell[1],1] = 1
+
         check_for_win()
 
     def get_time(fps):
