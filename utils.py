@@ -59,8 +59,3 @@ def generate_bomb_arangements(group):
 
 def exit2():
         exit()
-
-def graph(t1,t2,len1):
-    with open('graph.txt','a') as f:
-        f.write(f"generate ttime - {t1}\nfiltering time - {t2}\nlen - {len1}\n\n")
-        f.close()
