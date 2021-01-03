@@ -35,5 +35,32 @@ def get_cells_around(cell,board_size):
         
         return cells_around
 
+def common_member(a, b): 
+    a_set = set(a) 
+    b_set = set(b) 
+    if (a_set & b_set): 
+        return True 
+    else: 
+        return False
+
+def generate_bomb_arangements(group):
+        if len(group) > 1:
+            combination_ = generate_bomb_arangements(group[1:])
+            combination = []
+            for i in range(2):
+                for c in combination_:
+                    bufor = c[:]
+                    bufor.append(i)
+                    combination.append(bufor)
+        else:
+            combination = [[0],[1]]
+
+        return combination
+
 def exit2():
         exit()
+
+def graph(t1,t2,len1):
+    with open('graph.txt','a') as f:
+        f.write(f"generate ttime - {t1}\nfiltering time - {t2}\nlen - {len1}\n\n")
+        f.close()
