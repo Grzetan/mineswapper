@@ -6,9 +6,14 @@ pygame
 numpy
 pyautogui
 
+# Starting the game
+To start the game just type "python game.py" in main directory.
+
+# Intro to bot.py
 File bot.py contains the class MinesweeperBot which given an board picks best cell.
 You can use it in your projects.
 
+# Tutorial
 Tutorial (can also be found at the beggining of file):
 
 In order for this bot to work we have to pass board variable 
