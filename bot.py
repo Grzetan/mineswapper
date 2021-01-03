@@ -39,11 +39,6 @@ class MinesweeperBot():
         self.board_size = None
         self.board = None
 
-    def graph(self,t1,t2,len1):
-        with open('graph.txt','a') as f:
-            f.write(f"generate ttime - {t1}\nfiltering time - {t2}\nlen - {len1}\n\n")
-            f.close()
-
     def common_member(self,a,b):
         a_set = set(a) 
         b_set = set(b) 
