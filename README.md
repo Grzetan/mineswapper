@@ -9,6 +9,16 @@ pyautogui
 # Starting the game
 To start the game just type "python game.py" in main directory.
 
+# Modyfing board size and number of mines
+To change board size or number of mines just scroll to the very end of game.py file
+
+Look for this line:
+game = Minesweeper((15,19),mines_number=40)
+
+Let's say you want to play a board 10x10 with 20 mines
+Modify upper line to this:
+game = Minesweeper((10,10),mines_number=20)
+
 # Intro to bot.py
 File bot.py contains the class MinesweeperBot which given an board picks best cell.
 You can use it in your projects.
