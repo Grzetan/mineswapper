@@ -1,7 +1,9 @@
 # mineswapper
-Mineswapper game
+Mineswapper game with option to play yourself and watch AI play.
+Please remember that minesweeper is a game of luck so there will be cases in which AI fails.
 
-dependencies:
+
+# Dependencies
 pygame 
 numpy
 pyautogui
