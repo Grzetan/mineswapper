@@ -442,5 +442,5 @@ def end_game(WIN, btn_font,menu_font,game_end_color,text_color,FPS_COUNTER,title
             events2()
             refresh_window()
 
-game = Minesweeper((15,19),mines_number=80)
+game = Minesweeper((15,19),mines_number=40)
 game.play()
